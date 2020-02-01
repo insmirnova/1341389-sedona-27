@@ -21,8 +21,53 @@
 <main class="container">
 	<section class="filters">
 		<h2 class="visually-hidden">Фильтр поиска</h2>
-		<!--Здесь будет форма-->
+		<form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфаструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="Бассейн" checked>
+                Бассейн
+              </li>
+              <li>
+                <input type="checkbox" name="Парковка">
+                Парковка
+              </li>
+              <li>
+                <input type="checkbox" name="WI-FI">
+                WI-FI
+              </li>
+            </ul>
+          </fieldset>
+		</form>
+		<form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="Гостиница" checked>
+                Гостиница
+              </li>
+              <li>
+                <input type="checkbox" name="Мотель" checked>
+                Мотель
+              </li>
+              <li>
+                <input type="checkbox" name="Апартаменты" checked>
+                Апартаменты
+              </li>
+            </ul>
+          </fieldset>
+		</form>
+		<form method="get" action="https://echo.htmlacademy.ru">
+			<fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <input type="range" min="0" max="3000" step="1" value="50"> 
+        </fieldset>
+    </form>
+    <button type="submit">Показать</button>
 </section>	
+
 <section class="catalog">
 <h2 class="visually-hidden">Список гостиниц</h2>
 <ul class="catalog-list">
@@ -39,7 +84,7 @@
 	</a>
 	</p >
 	<a class="button" href="#">Подробнее</a>
-		<a class="button" href="#">Забронировать</a>
+		<button type="submit">Забронировать</button>
 	</li>
 	<li class="catalog-item">
 		<h3>
@@ -54,7 +99,7 @@
 	</a>
 	</p >
 	<a class="button" href="#">Подробнее</a>
-		<a class="button" href="#">Забронировать</a>
+		<button type="submit">Забронировать</button>
 	</li>
 	<li class="catalog-item">
 		<h3>
@@ -69,7 +114,7 @@
 	</a>
 	</p >
 	<a class="button" href="#">Подробнее</a>
-		<a class="button" href="#">Забронировать</a>
+		<button type="submit">Забронировать</button>
 	</li>
 </ul>
 </section>

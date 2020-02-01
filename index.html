@@ -59,7 +59,25 @@
 	<section>
 		<h2>Заинтересовались?</h2>
 		<p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-		<!--Здесь будет форма-->
+		<form action="https://echo.htmlacademy.ru" method="post">
+			<p>
+            <label for="appointment-date">Дата заезда</label>
+            <input id="appointment-date" type="date" name="date" value="2017-04-24" tabindex="0">
+          </p>
+          <p>
+            <label for="appointment-time">Дата выезда</label>
+            <input id="appointment-time" type="date" name="date" value="2017-07-04" tabindex="0">
+          </p>
+           <form action="handler.php">
+          <p>Взрослые</p>
+          <p><input type="number" size="3" name="num" min="1" max="5" value="1" tabindex="0"></p>
+           </form>
+           <form action="handler.php">
+          <p>Дети</p>
+          <p><input type="number" size="3" name="num" min="1" max="5" value="1" tabindex="0"></p>
+           </form>
+          <button type="submit">Найти</button>
+        </form> 
 	</section>
 </main>
 <footer>
