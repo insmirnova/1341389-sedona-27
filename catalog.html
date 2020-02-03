@@ -26,16 +26,16 @@
             <legend>Инфаструктура:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="Бассейн" checked>
-                Бассейн
+                <input type="checkbox" name="Бассейн" id="filter-Бассейн" checked>
+                <label for="filter-Бассейн">Бассейн</label>
               </li>
               <li>
-                <input type="checkbox" name="Парковка">
-                Парковка
+                <input type="checkbox" name="Парковка" id="filter-Парковка">      
+                <label for="filter-Парковка">Парковка</label>
               </li>
               <li>
-                <input type="checkbox" name="WI-FI">
-                WI-FI
+                <input type="checkbox" name="WI-FI" id="filter-WI-FI">
+                <label for="filter-WI-FI">WI-FI</label>
               </li>
             </ul>
           </fieldset>
@@ -45,25 +45,25 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="Гостиница" checked>
-                Гостиница
+                <input type="checkbox" name="Гостиница" id="filter-Гостиница" checked>
+                <label for="filter-Гостиница">Гостиница</label>
               </li>
               <li>
-                <input type="checkbox" name="Мотель" checked>
-                Мотель
+                <input type="checkbox" name="Мотель" id="filter-Мотель" checked>
+                <label for="filter-Мотель">Мотель</label>
               </li>
               <li>
-                <input type="checkbox" name="Апартаменты" checked>
-                Апартаменты
+                <input type="checkbox" name="Апартаменты" id="filter-Апартаменты" checked>
+                <label for="filter-Апартаменты">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
 		</form>
 		<form method="get" action="https://echo.htmlacademy.ru">
 			<fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
-            <input type="range" min="0" max="3000" step="1" value="50"> 
-        </fieldset>
+			<input type="range" min="0" max="180" step="20" value="0,10" /> 
+			<label for="filter-Стоимость в сутки (Р):">Стоимость в сутки (Р):</label>
+		</fieldset>
     </form>
     <button type="submit">Показать</button>
 </section>	

@@ -59,25 +59,34 @@
 	<section>
 		<h2>Заинтересовались?</h2>
 		<p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-		<form action="https://echo.htmlacademy.ru" method="post">
+		<form method="get" action="https://echo.htmlacademy.ru" method="post">
 			<p>
             <label for="appointment-date">Дата заезда</label>
-            <input id="appointment-date" type="date" name="date" value="2017-04-24" tabindex="0">
+            <input id="appointment-date" type="date" name="date" value="2017-04-24" tabindex="1">
           </p>
           <p>
             <label for="appointment-time">Дата выезда</label>
-            <input id="appointment-time" type="date" name="date" value="2017-07-04" tabindex="0">
+            <input id="appointment-time" type="date" name="date" value="2017-07-04" tabindex="2">
           </p>
-           <form action="handler.php">
-          <p>Взрослые</p>
-          <p><input type="number" size="3" name="num" min="1" max="5" value="1" tabindex="0"></p>
-           </form>
-           <form action="handler.php">
-          <p>Дети</p>
-          <p><input type="number" size="3" name="num" min="1" max="5" value="1" tabindex="0"></p>
+      </form>
+     <form method="get" action="handler.php">
+          <p>Взрослые:</p>
+     <div class="number">
+   <button> <span class="minus">-</span></button>
+    <input type="text" value="1" size="5"/>
+    <button><span class="plus">+</span></button>
+</div>
            </form>
           <button type="submit">Найти</button>
-        </form> 
+           <form method="get" action="handler.php">
+          <p>Дети:</p>
+        <div class="number">
+    <button><span class="minus">-</span></button>
+    <input type="text" value="1" size="5"/>
+    <button><span class="plus">+</span></BUTTON>
+</div>
+           </form>
+          <button type="submit">Найти</button> 
 	</section>
 </main>
 <footer>
