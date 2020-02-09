@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 <header class="main-header">
@@ -11,17 +13,17 @@
 		<img src="img/logo.jpg" alt="Логотип Седона">
 	    </a>
 		<ul class="site-navigation">
-			<li><a href="info.html">Информация</a></li>
-			<li><a href="foto.html">Фото и видео</a></li>
-			<li><a href="map.html">Карта штаба</a></li>
+			<li class="site-navigation-item"><a href="info.html">Информация</a></li>
+			<li class="site-navigation-item"><a href="foto.html">Фото и видео</a></li>
+			<li class="site-navigation-item"><a href="map.html">Карта штаба</a></li>
 			<li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
 		</ul>
 	</nav>
 </header>
-<main class="container">
+<main>
 	<section class="filters">
 		<h2 class="visually-hidden">Фильтр поиска</h2>
-		<form method="get" action="https://echo.htmlacademy.ru">
+		<form class="catalog-filter-form"  method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфаструктура:</legend>
             <ul>
@@ -40,7 +42,7 @@
             </ul>
           </fieldset>
 		</form>
-		<form method="get" action="https://echo.htmlacademy.ru">
+		<form class="catalog-filter-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Тип жилья:</legend>
             <ul>
@@ -67,7 +69,23 @@
     </form>
     <button type="submit">Показать</button>
 </section>	
+ <section class="sorting-block">
+            <span class="found">Найдено 3:</span>
 
+            <div class="sorting">
+                <p>Сортировка:</p>
+                <ul>
+                    <li class="sorting-item sorting-item-current"><a href="#">По цене</a></li>
+                    <li class="sorting-item"><a href="#">По типу</a></li>
+                    <li class="sorting-item"><a href="#">По рейтингу</a></li>
+                </ul>
+            </div>
+
+            <div class="sorting-arrows">
+                <span class="sorting-arrow-up"></span>
+                <span class="sorting-arrow-down"></span>
+            </div>
+        </section>
 <section class="catalog">
 <h2 class="visually-hidden">Список гостиниц</h2>
 <ul class="catalog-list">
@@ -83,9 +101,11 @@
 		<img src="img/hotel1.jpg"  alt="Гостиница от 4000 р. Amara Resort&spa">
 	</a>
 	</p >
-	<a class="button" href="#">Подробнее</a>
-		<button type="submit">Забронировать</button>
+	<button class="details-button" type="submit">Подробнее</button>
+		<button class="to-book-button" type="submit">Забронировать</button>
 	</li>
+	  <p class="stardom">Четыре звезды</p>
+      	      <p class="rating">Рейтинг: 8,5</p>
 	<li class="catalog-item">
 		<h3>
 		<a href="catalog.html">
@@ -98,9 +118,11 @@
 		<img src="img/hotel2.jpg" alt="Мотель от 3000 р. Desert Quail Inn">
 	</a>
 	</p >
-	<a class="button" href="#">Подробнее</a>
-		<button type="submit">Забронировать</button>
+	<button class="details-button" type="submit">Подробнее</button>
+		<button class="to-book-button" type="submit">Забронировать</button>
 	</li>
+	 <p class="stardom">Три звезды</p>
+      	      <p class="rating">Рейтинг: 8,9</p>	
 	<li class="catalog-item">
 		<h3>
 		<a href="catalog.html">
@@ -113,23 +135,31 @@
 		<img src="img/hotel3.jpg"  alt="Апартаменты от 2000 р. Villas at Poco Diablo">
 	</a>
 	</p >
-	<a class="button" href="#">Подробнее</a>
-		<button type="submit">Забронировать</button>
+	<button class="details-button" type="submit">Подробнее</button>
+		<button class="to-book-button"type="submit">Забронировать</button>
 	</li>
+	<p class="stardom">Две звезды</p>
+      	      <p class="rating">Рейтинг: 9,2</p>	
 </ul>
 </section>
 </main>
 <footer>
-	<p>#VISITSEDONA</p>	
-		<ul>
+	<p class="footer-contacts">
+		#VISITSEDONA<br>
+	Тел:+7(495)666-02-66
+    </p>
+	
+		<ul class="social">
 		<li><a href="#">Твиттер</a></li>
 			<li><a href="#">Фейсбук</a></li>
 			<li><a href="#">Телеграмм</a></li>
-		</ul>	
-	<p>
+		</ul>
+	
+	<p class="copyright">
 		WEBSITE BY
 		<a href="https://htmlacademy.ru">html academy</a>
+		<img src="img/logo_name.jpg" width="115" height="40" alt="Логотип HTML Academy">
 	</p>
 </footer>
-</body>
+  </body>
 </html>
