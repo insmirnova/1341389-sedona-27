@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-.to-find-button {
+.find-button {
   font: inherit;
   text-align: center;
   color:#ffffff;
@@ -23,9 +23,9 @@ a {
   background-color: #81b3d2;
 }
 
-.to-find-button:hover,
-.to-find-button:focus,
-.to-find-button:active {
+.find-button:hover,
+.find-button:focus,
+.find-button:active {
   background-color: #78B0BA;
 }
 
@@ -164,7 +164,7 @@ header {
 .details-button:active {
   background-color: #78B0BA;
 }
-.to-book-button {
+.book-button {
   font: inherit;
   text-align: center;
   color:#ffffff;
@@ -173,9 +173,9 @@ header {
   border: none;
   background-color: #766359;
 }
-.to-book-button:hover,
-.to-book-button:focus,
-.to-book-button:active {
+.book-button:hover,
+.book-button:focus,
+.book-button:active {
   background-color:#72643C;
 }
 .rating {
@@ -194,23 +194,23 @@ header {
     text-align: center;
 }
 
-.social {
+.socials {
     text-align: center;
 
     list-style: none;
 }
 
-.social a {
+.socials a {
     color: #ffffff;
 
     background-color: #81b3d2;
 }
 
-.social a:hover {
+.socials a:hover {
     background-color: #669ec0;
 }
 
-.social a:active {
+.socials a:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
 }
