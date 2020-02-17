@@ -4,25 +4,34 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
 <header class="main-header">
-	<nav class="main-navigation">
-		<a class="main-header-logo" href="index.html">
-		<img src="img/logo.jpg" alt="Логотип Седона">
-	    </a>
+        <a href="index.html" class="logo">
+            <img src="img/logo.svg"
+                alt="Логотип Седоны в виде треугольника, развёрнутого вершиной вниз."
+                style="width: 140px; height: 71px;">
+            </a>
+	    <nav>
 		<ul class="site-navigation">
-			<li class="site-navigation-item"><a href="info.html">Информация</a></li>
-			<li class="site-navigation-item"><a href="foto.html">Фото и видео</a></li>
-			<li class="site-navigation-item"><a href="map.html">Карта штаба</a></li>
-			<li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
+			<div class="menu-items-left">
+			    <li class="site-navigation-item"><a href="info.html">Информация</a></li>
+			    <li class="site-navigation-item"><a href="foto.html">Фото и видео</a></li>
+		     </div>
+		     <div class="menu-items-right">
+			    <li class="site-navigation-item"><a href="#map">Карта штаба</a></li>
+			    <li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
+			</div>
 		</ul>
 	</nav>
 </header>
+
 <main>
 	<section class="filters">
-		<h2 class="visually-hidden">Фильтр поиска</h2>
+		<!--<h2 class="visually-hidden">Фильтр поиска</h2>-->
 		<form class="catalog-filter-form"  method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфаструктура:</legend>
@@ -61,7 +70,7 @@
             </ul>
           </fieldset>
 		</form>
-		<form method="get" action="https://echo.htmlacademy.ru">
+		<form class="catalog-filter-form" method="get" action="https://echo.htmlacademy.ru">
 			<fieldset>
 			<input type="range" min="0" max="180" step="20" value="0,10" /> 
 			<label for="filter-Стоимость в сутки (Р):">Стоимость в сутки (Р):</label>
@@ -142,21 +151,24 @@
 </ul>
 </section>
 </main>
-<footer>
-	<p class="footer-contacts">
-		#VISITSEDONA<br>
-	Тел:+7(495)666-02-66
-    </p>
-	  <ul class="socials">
-		<li><a href="#">Твиттер</a></li>
-			<li><a href="#">Фейсбук</a></li>
-			<li><a href="#">Телеграмм</a></li>
-		</ul>
-     <p class="copyright">
-		WEBSITE BY
-		<a href="https://htmlacademy.ru">html academy</a>
-		<img src="img/logo_name.jpg" width="115" height="40" alt="Логотип HTML Academy">
-	</p>
+<footer class="footer">
+	<div class="footer-container">
+     <p class="footer-contacts">#VISITSEDONA<br>
+	<a class="number" href="tel:+74956660266">Тел: +7(495) 666-02-66</a></p>
+    </div>
+
+    <div class="footer-social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+             <ul class="social-list">
+                 <li class="social-button"><a href="#"> <img class="button-tw" src="img/t.svg" width="17" height="15" alt="твиттер"></a></li>
+                 <li class="social-button"><a href="#"> <img class="button-fb" src="img/fb-icon.svg" width="12" height="22" alt="фейсбук"></a></li>
+                 <li class="social-button"><a href="#"> <img class="button-yt" src="img/youtube.svg" width="20" height="16" alt="Ютуб"></a></li>
+                  </ul>
+                </div>
+                  <p class="footer-copyright"> websate by
+                    <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo_name.jpg" width="115" height="41" alt="HTMLAcademy"></a>
+                    </p>
+                </div>
 </footer>
   </body>
 </html>
