@@ -34,11 +34,11 @@
             <ul>
               <li>
                 <input type="checkbox" name="Бассейн" id="filter-Бассейн" checked>
-                <label for="filter-Бассейн">Бассейн</label>
+                <label for="filter-pool">Бассейн</label>
               </li>
               <li>
                 <input type="checkbox" name="Парковка" id="filter-Парковка">      
-                <label for="filter-Парковка">Парковка</label>
+                <label for="filter-parking">Парковка</label>
               </li>
               <li>
                 <input type="checkbox" name="WI-FI" id="filter-WI-FI">
@@ -53,15 +53,15 @@
             <ul>
               <li>
                 <input type="checkbox" name="Гостиница" id="filter-Гостиница" checked>
-                <label for="filter-Гостиница">Гостиница</label>
+                <label for="filter-hotel">Гостиница</label>
               </li>
               <li>
                 <input type="checkbox" name="Мотель" id="filter-Мотель" checked>
-                <label for="filter-Мотель">Мотель</label>
+                <label for="filter-motel">Мотель</label>
               </li>
               <li>
                 <input type="checkbox" name="Апартаменты" id="filter-Апартаменты" checked>
-                <label for="filter-Апартаменты">Апартаменты</label>
+                <label for="filter-apartaments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -83,8 +83,8 @@
 </section>	
 
  <section class="sorting-block">
-            <div class="found">Найдено 3:</div>
-            <div class="sorting">
+  <div class="sorting">
+            <span class="found">Найдено 3:</span>
                 <p>Сортировка:</p>
                 <ul>
                     <li class="sorting-item sorting-item-current"><a href="#">По цене</a></li>
@@ -94,67 +94,100 @@
             </div>
 
             <div class="sorting-arrows">
-                <span class="sorting-arrow-up"></span>
-                <span class="sorting-arrow-down"></span>
+                <button type="button" class="sorting-arrow sorting-arrow-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                        <path fill="#cacaca" d="M5.5 0L0 10h11z" /></svg>
+                </button>
+                <button type="button" class="sorting-arrow sorting-arrow-down sorting-arrow-current">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                        <path fill="#cacaca" d="M5.5 10L0 0h11" /></svg>
+                </button>
             </div>
         </section>
+
 <section class="catalog">
 <h2 class="visually-hidden">Список гостиниц</h2>
+
 <ul class="catalog-list">
 	<li class="catalog-item">
-		<h3>
-		<a href="catalog.html">
-		<span class="catalog-category">Гостиница от 4000 р.</span>
-		<span class="catalog-item-tittle">Amara Resort&spa</span>
+     <figure>
+      <img src="img/hotel1.jpg" class="catalog-item-image" width="135" height="90" alt="Гостиница от 4000 р. Amara Resort&spa">
+    <a href="catalog.html">
+		<figcaption class="catalog-item-text">
+     <table>
+      <caption>Amara Resort & Spa</caption>
+      <tr>
+      <td class="catalog-item-type">Гостиница</td><td class="catalog-item-price">от 400 р.</td>
+      </tr>
+      <tr><td><button type="button" class="button button-blue catalog-item-info-button">Подробнее</button></td><td><button type="button" class="button button-brown catalog-item-reservation-button">Забронировать</button></td></tr>
+          </table>
+          </figcaption>
+           </figure>
 	</a>
-	</h3>
-	<p>
 		<a href="catalog-item.html">
-		<img src="img/hotel1.jpg"  alt="Гостиница от 4000 р. Amara Resort&spa">
-	</a>
-	</p >
-	<button class="details-button" type="submit">Подробнее</button>
-		<button class="book-button" type="submit">Забронировать</button>
-	</li>
-	  <p class="stardom">Четыре звезды</p>
-      	      <p class="rating">Рейтинг: 8,5</p>
-	<li class="catalog-item">
-		<h3>
-		<a href="catalog.html">
-		<span class="catalog-category">Мотель от 3000 р.</span>
-		<span class="catalog-item-tittle">Desert Quail Inn</span>
-	</a>
-	</h3>
-	<p>
-		<a href="catalog-item.html">
-		<img src="img/hotel2.jpg" alt="Мотель от 3000 р. Desert Quail Inn">
-	</a>
-	</p >
-	<button class="details-button" type="submit">Подробнее</button>
-		<button class="book-button" type="submit">Забронировать</button>
-	</li>
-	 <p class="stardom">Три звезды</p>
-      	      <p class="rating">Рейтинг: 8,9</p>	
-	<li class="catalog-item">
-		<h3>
-		<a href="catalog.html">
-		<span class="catalog-category">Апартаменты от 2000 р.</span>
-		<span class="catalog-item-tittle">Villas at Poco Diablo</span>
-	</a>
-	</h3>
-	<p>
-		<a href="catalog-item.html">
-		<img src="img/hotel3.jpg"  alt="Апартаменты от 2000 р. Villas at Poco Diablo">
-	</a>
-	</p >
-	<button class="details-button" type="submit">Подробнее</button>
-		<button class="book-button"type="submit">Забронировать</button>
-	</li>
-	<p class="stardom">Две звезды</p>
-      	      <p class="rating">Рейтинг: 9,2</p>	
-</ul>
-</section>
-</main>
+      <div class="catalog-item-rating">
+                        <div class="catalog-item-stars">
+                            <span class="catalog-item-star"></span>
+                            <span class="catalog-item-star"></span>
+                            <span class="catalog-item-star"></span>
+                            <span class="catalog-item-star"></span>
+                        </div>
+                        <p class="catalog-item-mark">Рейтинг: 8,5</p>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <figure>
+                        <img src="img/hotel2.jpg" class="catalog-item-image" width="135" height="90"
+                            alt="мотель от 3000р">
+                        <figcaption class="catalog-item-text">
+                            <table>
+                                <caption>Desert Quail Inn</caption>
+                                <tr>
+                                    <td class="catalog-item-type">Мотель</td><td class="catalog-item-price">от 3000 р.</td>
+                                </tr>
+                                <tr><td><button type="button"
+                                    class="button button-blue catalog-item-info-button">Подробнее</button></td><td><button type="button"
+                                        class="button button-brown catalog-item-reservation-button">Забронировать</button></td></tr>
+                            </table>
+                        </figcaption>
+                    </figure>
+                    <div class="catalog-item-rating">
+                        <div class="catalog-item-stars">
+                            <span class="catalog-item-star"></span>
+                            <span class="catalog-item-star"></span>
+                            <span class="catalog-item-star"></span>
+                        </div>
+                        <p class="catalog-item-mark">Рейтинг: 8,9</p>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <figure>
+                        <img src="img/hotel3.jpg" class="catalog-item-image" width="135" height="90"
+                            alt="апартаменты от 2000р">
+                        <figcaption class="catalog-item-text">
+                            <table>
+                                <caption>Villas at Poco Diablo</caption>
+                                <tr>
+                                    <td class="catalog-item-type">Апартаменты</td><td class="catalog-item-price">от 2000 р.</td>
+                                </tr>
+                                <tr><td><button type="button"
+                                    class="button button-blue catalog-item-info-button">Подробнее</button></td><td><button type="button"
+                                        class="button button-brown catalog-item-reservation-button">Забронировать</button></td></tr>
+                            </table>
+                        </figcaption>
+                    </figure>
+                    <div class="catalog-item-rating">
+                        <div class="catalog-item-stars">
+                            <span class="catalog-item-star"></span>
+                            <span class="catalog-item-star"></span>
+                        </div>
+                        <p class="catalog-item-mark">Рейтинг: 9,2</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+      </a>
+    </main>
 <footer class="footer">
 	<div class="footer-container">
      <p class="footer-contacts">#VISITSEDONA<br>
