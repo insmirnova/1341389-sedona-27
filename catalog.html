@@ -26,46 +26,43 @@
 </header>
 
 <main>
-	<section class="filters">
-		<!--<h2 class="visually-hidden">Фильтр поиска</h2>-->
-		<form class="catalog-filter-form"  method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Инфаструктура:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="Бассейн" id="filter-pool" checked>
-                <label for="filter-pool">Бассейн</label>
-              </li>
-              <li>
-                <input type="checkbox" name="Парковка" id="filter-parking">      
-                <label for="filter-parking">Парковка</label>
-              </li>
-              <li>
-                <input type="checkbox" name="WI-FI" id="filter-WI-FI">
-                <label for="filter-WI-FI">WI-FI</label>
-              </li>
-            </ul>
-          </fieldset>
-		</form>
-		<form class="catalog-filter-form" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Тип жилья:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="Гостиница" id="filter-hotel" checked>
-                <label for="filter-hotel">Гостиница</label>
-              </li>
-              <li>
-                <input type="checkbox" name="Мотель" id="filter-motel" checked>
-                <label for="filter-motel">Мотель</label>
-              </li>
-              <li>
-                <input type="checkbox" name="Апартаменты" id="filter-apartaments" checked>
-                <label for="filter-apartaments">Апартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
-		</form>
+      <h1 class="visually-hidden">Отели в городе Седона</h1>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр по отелям</h2>
+        <div class="filter-top">
+          <form class="filter__form container" action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="filter__wrap">
+              <legend class="filter__title">Инфраструктура:</legend>
+              <p class="filter__elem">
+                <input class="visually-hidden filter__input" type="checkbox" name="pool" id="filter-pool" checked>
+                <label class="filter__label" for="filter-pool">Бассейн</label>
+              </p>
+              <p class="filter__elem">
+                <input class="visually-hidden filter__input" type="checkbox" name="parking" id="filter-parking">
+                <label class="filter__label" for="filter-parking">Парковка</label>
+              </p>
+              <p class="filter__elem">
+                <input class="visually-hidden filter__input" type="checkbox" name="wifi" id="filter-wifi">
+                <label class="filter__label" for="filter-wifi">Wi-fi</label>
+              </p>
+            </fieldset>
+            <fieldset class="filter__wrap">
+              <legend class="filter__title">Тип жилья:</legend>
+              <p class="filter__elem">
+                <input class="visually-hidden filter__input" type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label class="filter__label" for="filter-hotel">Гостиница</label>
+              </p>
+              <p class="filter__elem">
+                <input class="visually-hidden filter__input" type="checkbox" name="motel" id="filter-motel" checked>
+                <label class="filter__label" for="filter-motel">Мотель</label>
+              </p>
+              <p class="filter__elem">
+                <input class="visually-hidden filter__input" type="checkbox" name="apartments" id="filter-apartments"
+                  checked>
+                <label class="filter__label" for="filter-apartments">Апартаменты</label>
+              </p>
+            </fieldset>
+            
     <div class="filter-range">
       <div class="filter-range-title">Стоимость в сутки (р):</div>
       <div class="price-controls">
@@ -201,7 +198,6 @@
                  <li class="social-button"><a href="#"> <img class="button-fb" src="img/fb-icon.svg" width="12" height="22" alt="фейсбук"></a></li>
                  <li class="social-button"><a href="#"> <img class="button-yt" src="img/youtube.svg" width="20" height="16" alt="Ютуб"></a></li>
                   </ul>
-                </div>
                   <p class="footer-copyright"> websate by
                     <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo_name.jpg" width="115" height="41" alt="HTMLAcademy"></a>
                     </p>
