@@ -512,13 +512,12 @@ margin-top: 10%;
     color: #94b9d2;
 }
 .map {
-    background: url(img/map.jpg)
-    background-position: top -83px right 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 508px;
     position: relative;
-      }
+    z-index: 1;
+}
+.map iframe {
+    position: absolute;
+}
 
 /*main-catalog*/
 
